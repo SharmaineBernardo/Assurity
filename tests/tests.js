@@ -17,4 +17,18 @@ describe("GET /Categories/6329/Details.json", async function(){
             throw new Error(e);
         }
     });
+
+    //Testing the acceptance criteria
+    it("Verify that the name of the category is correct", async function(){
+        expect(response.data.Name).to.equal("Home & garden");
+    });
+
+    it("Verify that the category can be relisted", async function(){
+        expect(response.data.CanRelist).to.equal(true);
+    });
+
+    it("Verify that the Feature promotion has the correct description", async function(){
+        const description = response.data.Promotions.find(promotion => promotion.Name === "Feature").Description;
+        expect(description).to.equal("Better position in category");
+    });
 });
