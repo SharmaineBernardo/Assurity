@@ -4,6 +4,7 @@ Objective: Test the returned data from the API: https://api.tmsandbox.co.nz/v1/C
 
 ## Prerequisite:
 Node.js is installed: https://nodejs.org/en/download/
+Git bash: https://git-scm.com/downloads
 
 ## To run:
 1. Clone this project locally:
