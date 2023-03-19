@@ -1,7 +1,6 @@
 const axios = require("axios");
 const expect = require("chai").expect;
 
-
 const baseUrl = "https://api.tmsandbox.co.nz/v1";
 
 // Test the API endpoint for retrieving details of a specific category with CategoryId = 6329
